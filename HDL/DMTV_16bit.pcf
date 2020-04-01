@@ -1,0 +1,33 @@
+set_io wclk 51
+set_io din[0] 52
+set_io write_en 53 
+set_io din[1] 54
+set_io CLK40MHz 97
+
+set_io vga_r[0] 7
+set_io vga_r[1] 4
+set_io vga_r[2] 3
+set_io vga_r[3] 2
+set_io vga_r[4] 1
+
+set_io vga_g[0] 18
+set_io vga_g[1] 19
+set_io vga_g[2] 16
+set_io vga_g[3] 15
+set_io vga_g[4] 12
+set_io vga_g[5] 13
+
+set_io vga_b[0] 28
+set_io vga_b[1] 27
+set_io vga_b[2] 26
+set_io vga_b[3] 25
+set_io vga_b[4] 24
+
+set_io vga_hs 99
+set_io vga_vs 100
+
+set_io btnLft 87
+set_io btnB 86
+set_io btnUp 85
+set_io btnDwn 83
+set_io btnA 82
