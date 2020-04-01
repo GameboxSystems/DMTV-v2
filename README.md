@@ -2,6 +2,7 @@
 
 DMTV or "Dot Matrix Television" is an embedded solution to pair with a an original GameBoy console to provide 800x600 60Hz VGA out graphics, NES controller input, custom color palettes, and toggleable scanlines.
 
+Utilizes Lattice iCE40HX1K-VQ100 low cost FPGA for display processing and Atmega32u4 for controller processing.
 
 ## Getting Started
 
@@ -42,6 +43,7 @@ Use Pins 10,11,12,13, 5v, and gnd instead of the ISP header.
 
 * Color palettes can be swapped for different color palettes if desired. The color code is RGB565 so any color space higher than that will need to be translated down. RGB888 can be added via hardware if desired as well, it will however reduce the amount of logic elements.
 * If a different screen resolution is desired, swap out the current 40MHz oscillator for an oscialltor that matches timings consistant with that frequency. The code will need to be changed to reflect the profile as well. Use VGA profiles found here: http://tinyvga.com/vga-timing
+* Atmega32u4 is required for current implementation due to the writing of PORTF. Porting the current code was attempted to a Atmega328PB but failed due to oscillator pins being on PORTC. Other implementations of the code + hardware changes may allow for a cheaper micro controller to be used.
 
 ## Currently Known Issues
 
