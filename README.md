@@ -68,7 +68,7 @@ Please feel free to issue a PR or edit code freely. Would love to have people co
 
 ## Authors
 
-* **Postman** - *Head of engineering at Gamebox Systems*
+* **Postman** - *Engineer at Gamebox Systems*
 
 ## License
 
