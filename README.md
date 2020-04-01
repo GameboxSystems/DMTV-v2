@@ -24,7 +24,7 @@ DMTV or "Dot Matrix Television" is an embedded solution to pair with a an origin
 
 Once a binary is obtained either through synthesis of source or using the precompiled binary, connect the buspirate to the SOIC clip as shown below.
 
-![Buspirate Connection](/images/buspirate.png)
+![Buspirate Connection](/images/Buspirate.png)
 
 If using a binary output from APIO, you must resize the binary. Flashrom will not flash the spi memory until it is sized properly. Linux users, use the truncate command and windows users use your favorite hex editor to resize the binary.
 
