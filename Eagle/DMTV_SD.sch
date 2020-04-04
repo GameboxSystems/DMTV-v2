@@ -15972,22 +15972,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="GND"/>
-<wire x1="111.76" y1="40.64" x2="111.76" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="33.02" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="40.64" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<pinref part="U2" gate="A" pin="A5"/>
-<pinref part="U2" gate="A" pin="A6"/>
-<wire x1="111.76" y1="53.34" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U2" gate="A" pin="A7"/>
-<wire x1="111.76" y1="50.8" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<junction x="111.76" y="50.8"/>
 <pinref part="U2" gate="A" pin="A8"/>
 <wire x1="111.76" y1="48.26" x2="111.76" y2="45.72" width="0.1524" layer="91"/>
-<junction x="111.76" y="48.26"/>
 <wire x1="111.76" y1="45.72" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 <junction x="111.76" y="45.72"/>
 <junction x="111.76" y="40.64"/>
-<junction x="111.76" y="53.34"/>
+<junction x="111.76" y="48.26"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="~OE"/>
@@ -16573,45 +16566,48 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="22.86" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D7" class="0">
+<net name="N$13" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="IOT_79"/>
-<wire x1="81.28" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="91"/>
-<label x="93.98" y="114.3" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="5"/>
+<wire x1="25.4" y1="2.54" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D8" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="IOT_80"/>
-<wire x1="81.28" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
-<label x="93.98" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D9" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="IOT_81"/>
-<wire x1="81.28" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
-<label x="93.98" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D10" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="IOT_82"/>
-<wire x1="81.28" y1="121.92" x2="93.98" y2="121.92" width="0.1524" layer="91"/>
-<label x="93.98" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="D11" class="0">
+<net name="BTNA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="IOT_78"/>
 <wire x1="81.28" y1="111.76" x2="93.98" y2="111.76" width="0.1524" layer="91"/>
 <label x="93.98" y="111.76" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$13" class="0">
 <segment>
-<pinref part="SV1" gate="1" pin="5"/>
-<wire x1="25.4" y1="2.54" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="B6"/>
+<wire x1="147.32" y1="66.04" x2="154.94" y2="66.04" width="0.1524" layer="91"/>
+<label x="154.94" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="BTNB" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IOT_81"/>
+<wire x1="81.28" y1="119.38" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<label x="93.98" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="B5"/>
+<wire x1="147.32" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
+<label x="154.94" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D9" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="A5"/>
+<wire x1="111.76" y1="53.34" x2="106.68" y2="53.34" width="0.1524" layer="91"/>
+<label x="101.6" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D11" class="0">
+<segment>
+<pinref part="U2" gate="A" pin="A6"/>
+<wire x1="111.76" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
+<label x="101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

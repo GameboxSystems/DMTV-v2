@@ -56,6 +56,7 @@ Use Pins 10,11,12,13, 5v, and gnd instead of the ISP header.
 * [APIO Icestorm](https://github.com/FPGAwars/apio)
 * Arduino IDE
 * flashrom
+* Eagle
 
 ## Versions
 
