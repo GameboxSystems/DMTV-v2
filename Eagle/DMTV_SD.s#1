@@ -15497,7 +15497,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="H3" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.2" package3d_urn="urn:adsk.eagle:package:14282/1"/>
 <part name="H4" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-PAD-ROUND" device="3.2" package3d_urn="urn:adsk.eagle:package:14282/1"/>
 <part name="SV1" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1"/>
-<part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B2,54" package3d_urn="urn:adsk.eagle:package:27948/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -16975,9 +16974,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="31.75" y="24.13" size="1.778" layer="95" rot="R270"/>
 <attribute name="TP_SIGNAL_NAME" x="29.21" y="21.59" size="1.778" layer="97" rot="R270"/>
 </instance>
-<instance part="GND" gate="G$1" x="17.78" y="7.62" smashed="yes" rot="R180">
-<attribute name="TP_SIGNAL_NAME" x="16.51" y="8.89" size="1.778" layer="97" rot="R180"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -16987,7 +16983,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="J4" gate="G$1" pin="5"/>
 <wire x1="17.78" y1="20.32" x2="17.78" y2="10.16" width="0.1524" layer="91"/>
 <label x="17.78" y="10.16" size="1.778" layer="95"/>
-<pinref part="GND" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="R_AUDIO" class="0">
