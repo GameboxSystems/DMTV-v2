@@ -8,6 +8,15 @@ Unlike the original DMTV, this version no longer requires an atmega32u4 for cont
 
 To access scanlines and alternate color palettes, simply press Start + Select + A/B. The toggle is executed on the falling edge of the button press.
 
+## Changes From v1
+
+* No atmega32u4 for controller handling. This is now done by the FPGA via the nes_controller.v
+* Addition of mosfet/diode arrays to simulate button presses for the Game Boy.
+* Nes Port now built in!
+* Mono audio included in ribbon cable. One wire required for pro sound mod.
+* Greatly reduced BOM cost
+* Color palettes don't hurt the eyes as much
+
 ## Getting Started
 
 ### Prerequisites
