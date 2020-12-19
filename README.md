@@ -1,4 +1,4 @@
-# DMTV
+# DMTV v2
 
 ![DMTV v2 PCB](/images/DMTVPCB.png)
 
