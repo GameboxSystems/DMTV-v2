@@ -1,0 +1,42 @@
+set_io iclk 			69
+set_io idata[0] 		73
+set_io ivsync 			72 
+set_io idata[1] 		71
+set_io clk 				78
+set_io ihsync 			51
+
+
+set_io r[4] 	96
+set_io r[3] 	100
+set_io r[2] 	95
+set_io r[1] 	97
+set_io r[0] 	99
+
+set_io g[5] 	94
+set_io g[4] 	93
+set_io g[3] 	91
+set_io g[2] 	90
+set_io g[1] 	89
+set_io g[0] 	87
+
+set_io b[4] 	86
+set_io b[3] 	83
+set_io b[2] 	82
+set_io b[1] 	81
+set_io b[0] 	85
+
+set_io hsync 		79
+set_io vsync 		80
+
+set_io nes_data 	74
+set_io nes_clock 	42
+set_io nes_latch 	41
+
+set_io btnA 		60
+set_io btnB 		63
+set_io btnStart		68
+set_io btnSelect	65
+set_io btnUp 	 	64
+set_io btnDown 		66
+set_io btnLeft 		62
+set_io btnRight		59

@@ -1,27 +1,28 @@
 # DMTV
 
-![DMTV PCB](/images/DMTVPCB.png)
+![DMTV v2 PCB](/images/DMTVPCB.png)
 
 DMTV or "Dot Matrix Television" is an embedded solution to pair with a an original GameBoy console to provide 800x600 60Hz VGA out graphics, NES controller input, custom color palettes, and toggleable scanlines.
 
-Utilizes Lattice iCE40HX1K-VQ100 low cost FPGA for display processing and Atmega32u4 for controller processing.
+Unlike the original DMTV, this version no longer requires an atmega32u4 for controller handling. This feature is now baked directly into the source code using a simple shift register! This allows for a simplified board and lower BOM cost than before. Also includes all new color palettes.
+
+To access scanlines and alternate color palettes, simply press Start + Select + A/B. The toggle is executed on the falling edge of the button press.
 
 ## Getting Started
 
-
 ### Prerequisites
 
-* Assembled DMTV board (keep spi flash off board until after flashing)
+* Assembled DMTV v2 board (keep spi flash off board until after flashing)
 * Windows/Linux computer (linux HIGHLY recommended)
-* APIO Icestorm (iceCube2 will **NOT** synthesize source code correctly as it is not as optimized as APIO)
+* [APIO Icestorm](https://apiodoc.readthedocs.io/en/stable/) (iceCube2 will **NOT** synthesize source code correctly as it is not as optimized as APIO)
 	* Either compile from source using APIO Icestorm or use provided precompiled binary
-* Arduino IDE
+	* You can find install instructions on multiple platforms [here](https://apiodoc.readthedocs.io/en/stable/source/installation.html)
 * Pomona SOIC-Clip Model 5252/buspirate v3.6 combo
 	* This combo is for bypassing the expensive Lattice Diamond programmer cable
 	* Pomona clip: https://www.digikey.com/product-detail/en/pomona-electronics/5252/501-2059-ND/745103
 	* Buspirate v3.6: https://www.sparkfun.com/products/12942
-* Arduino Uno for programming Atmega32u4
-* flashrom 
+* [flashrom](https://www.flashrom.org/Flashrom) 
+* Not in the BOM, but a right angle NES port is required for controller support. You can find them [here](https://www.aliexpress.com/item/32827549549.html?spm=a2g0o.productlist.0.0.11e3692acsauoI&algo_pvid=a0c39696-6282-46c4-b619-8d788824134f&algo_expid=a0c39696-6282-46c4-b619-8d788824134f-5&btsid=0b0a555a16083483935633202e09b7&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
 
 ### Flashing FPGA SPI Flash Memory
 
@@ -35,28 +36,30 @@ For instructions on how to use buspirate with flashrom, use the official buspira
 
 After successful flash, solder to DMTV PCB.
 
-### Flashing Atmega32u4 uC
-
-Flash via Arduino IDE using Arduino ISP on the Arduino Uno. Use the ISP reference guide here: https://www.arduino.cc/en/tutorial/arduinoISP
-
-Use Pins 10,11,12,13, 5v, and gnd instead of the ISP header.
-
 ### Notes on the HDL Code / Hardware
 
 * Color palettes can be swapped for different color palettes if desired. The color code is RGB565 so any color space higher than that will need to be translated down. RGB888 can be added via hardware if desired as well, it will however reduce the amount of logic elements.
 * If a different screen resolution is desired, swap out the current 40MHz oscillator for an oscialltor that matches timings consistant with that frequency. The code will need to be changed to reflect the profile as well. Use VGA profiles found here: http://tinyvga.com/vga-timing
-* Atmega32u4 is required for current implementation due to the writing of PORTF. Porting the current code was attempted to a Atmega328PB but failed due to oscillator pins being on PORTC. Other implementations of the code + hardware changes may allow for a cheaper micro controller to be used.
+* Resistor values go from greatest to smallest and are assigned such that the least significant assigned output pin for RGB goes to the highest ohm resistor downwards
+	* i.e. R0 -> 8kohm, G -> 16kohm, B -> 8kohm, etc.
+
 
 ## Currently Known Issues
 
-* No button debounce implemented on FPGA side for toggling scanlines and palettes.
+* Non currently found, please submit a pull request if you find one
+
+## ToDo
+
+* Add option to flash SPI flash via header instead
+	* This was a challenge as there needs to be a way to sever the 3.3v power rail. If the SPI flash and the FPGA both have power then the SPI flash is not detected. The only work around known is to flash the SPI flash off the board and solder it on after flashing.
+* SNES controller support
 
 ## Built With
 
 * [APIO Icestorm](https://github.com/FPGAwars/apio)
-* Arduino IDE
 * flashrom
 * Eagle
+* Sublime Text
 
 ## Versions
 
@@ -69,7 +72,7 @@ Please feel free to issue a PR or edit code freely. Would love to have people co
 
 ## Authors
 
-* **Postman** - *Engineer at Gamebox Systems*
+* **Postman** - *Head of engineering at Gamebox Systems*
 
 ## License
 
@@ -77,5 +80,4 @@ This project is licensed under the GPL-3.0 license, see attached license for inf
 
 ## Acknowledgments
 
-* **uXeBoy** - *Wrote base code DMTV is based off of* - [uXeBoy](https://github.com/uXeBoy)
-	* Big thanks to uXeBoy for all the help with this project, you da bomb man!
+* **ahhuhtal** - *DMTV v2 is based off of their gbvga project. Ahhuhtal, thank you for your wonderful description of how the first active pixel is after the falling edge of HSync. I was stuck on that for a long time.* - [ahhuhtal](https://github.com/ahhuhtal)
