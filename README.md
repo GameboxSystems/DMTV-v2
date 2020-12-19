@@ -31,7 +31,7 @@ To access scanlines and alternate color palettes, simply press Start + Select + 
 	* Pomona clip: https://www.digikey.com/product-detail/en/pomona-electronics/5252/501-2059-ND/745103
 	* Buspirate v3.6: https://www.sparkfun.com/products/12942
 * [flashrom](https://www.flashrom.org/Flashrom) 
-* Not in the BOM, but a right angle NES port is required for controller support. You can find them [here](https://www.aliexpress.com/item/32827549549.html?spm=a2g0o.productlist.0.0.11e3692acsauoI&algo_pvid=a0c39696-6282-46c4-b619-8d788824134f&algo_expid=a0c39696-6282-46c4-b619-8d788824134f-5&btsid=0b0a555a16083483935633202e09b7&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)
+* Not in the BOM, but a right angle NES port is required for controller support. You can find them [here](https://www.zedlabz.com/products/zedlabz-7-pin-90-degree-female-controller-connector-port-for-nintendo-nes-console-2-pack-black)
 
 ### Flashing FPGA SPI Flash Memory
 
