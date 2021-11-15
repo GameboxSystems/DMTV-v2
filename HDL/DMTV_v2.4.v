@@ -435,10 +435,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h2108;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h51CC;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFB0C;
 		            end
 		            else begin
@@ -450,10 +450,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h2081;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h2113;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFDC4;
 		            end
 		            else begin
@@ -465,10 +465,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h6260;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hE3AC;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hE466;
 		            end
 		            else begin
@@ -480,10 +480,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h738E;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h8D29;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hC3EF;
 		            end
 		            else begin
@@ -495,10 +495,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h1804;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h78E9;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hBA88;
 		            end
 		            else begin
@@ -526,10 +526,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h04AF;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h662D;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hD2CB;
 		            end
 		            else begin
@@ -541,10 +541,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'hFB99;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h067F;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h074F;
 		            end
 		            else begin
@@ -556,10 +556,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'hFA6A;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFC87;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hEF0E;
 		            end
 		            else begin
@@ -571,10 +571,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h0000;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h5000;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hA000;
 		            end
 		            else begin
@@ -586,10 +586,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h0000;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h632C;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hB5B6;
 		            end
 		            else begin
@@ -601,10 +601,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h422F;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h9312;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFCD0;
 		            end
 		            else begin
@@ -616,10 +616,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h59C4;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h6C68;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h7E2F;
 		            end
 		            else begin
@@ -631,10 +631,10 @@ module top(
 					if(data_now == 0) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h01C1;
 		            end
-		            else if(data_now == 1) begin
+		            else if(data_now == 2) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h1B05;
 		            end
-		            else if(data_now == 2) begin
+		            else if(data_now == 1) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h8542;
 		            end
 		            else begin
@@ -646,10 +646,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'd0;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'd26471;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'd46775;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -661,10 +661,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h2108;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h51CC;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFB0C;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -676,10 +676,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h2081;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h2113;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFDC4;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -691,10 +691,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h6260;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hE3AC;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hE466;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -706,10 +706,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h738E;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h8D29;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hC3EF;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -721,10 +721,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h1804;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h78E9;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hBA88;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -736,10 +736,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h0000;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h0738;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h2C21;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -752,10 +752,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h04AF;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h662D;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hD2CB;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -767,10 +767,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'hFB99;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h067F;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h074F;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -782,10 +782,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'hFA6A;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFC87;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hEF0E;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -797,10 +797,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h0000;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h5000;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hA000;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -812,10 +812,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h0000;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h632C;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hB5B6;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -827,10 +827,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin 
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h422F;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h9312;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'hFCD0;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
@@ -842,10 +842,10 @@ module top(
 					if(data_now == 0 && (vcounter_next2 % 2 == 0)) begin
 					 	{vga_r_r, vga_g_r, vga_b_r} <= 16'h59C4;
 		            end
-		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h6C68;
 		            end
-		            else if(data_now == 2 && (vcounter_next2 % 2 == 0)) begin
+		            else if(data_now == 1 && (vcounter_next2 % 2 == 0)) begin
 						{vga_r_r, vga_g_r, vga_b_r} <= 16'h7E2F;
 		            end
 		            else if(data_now == 3 && (vcounter_next2 % 2 == 0)) begin
